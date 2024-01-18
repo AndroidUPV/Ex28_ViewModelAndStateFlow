@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2022-2023 Universitat Politècnica de València
+  ~ Authors: David de Andrés and Juan Carlos Ruiz
+  ~          Fault-Tolerant Systems
+  ~          Instituto ITACA
+  ~          Universitat Politècnica de València
+  ~
+  ~ Distributed under MIT license
+  ~ (See accompanying file LICENSE.txt)
+  -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.MainActivity">
+
+    <TextView
+        android:id="@+id/tvLike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple"
+        android:textSize="48sp"
+        app:drawableStartCompat="@drawable/ic_like"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+    <ImageButton
+        android:id="@+id/bThumbDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/thumb_down"
+        android:src="@drawable/ic_thumb_down"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLike"
+        app:layout_constraintEnd_toStartOf="@+id/tvLike"
+        app:layout_constraintTop_toTopOf="@+id/tvLike" />
+
+    <ImageButton
+        android:id="@+id/bThumbUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:contentDescription="@string/thumb_up"
+        android:src="@drawable/ic_thumb_up"
+        app:layout_constraintBottom_toBottomOf="@+id/tvLike"
+        app:layout_constraintStart_toEndOf="@+id/tvLike"
+        app:layout_constraintTop_toTopOf="@+id/tvLike" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

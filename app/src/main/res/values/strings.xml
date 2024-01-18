@@ -1,0 +1,17 @@
+<!--
+  ~ Copyright (c) 2022-2023 Universitat Politècnica de València
+  ~ Authors: David de Andrés and Juan Carlos Ruiz
+  ~          Fault-Tolerant Systems
+  ~          Instituto ITACA
+  ~          Universitat Politècnica de València
+  ~
+  ~ Distributed under MIT license
+  ~ (See accompanying file LICENSE.txt)
+  -->
+
+<resources>
+    <string name="app_name">Ex28_ViewModelAndStateFlow</string>
+    <!-- Content description for ImageButtons -->
+    <string name="thumb_up">Thumb up</string>
+    <string name="thumb_down">Thumb down</string>
+</resources>
